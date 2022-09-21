@@ -1,0 +1,35 @@
+sort1 uses: Bubble sort
+
+How do you know?: It's the slowest because it's in reverse order and therefore needs many steps to bubble all numbers to the right side
+
+reversed 50'000
+real    0m5.479s
+user    0m5.010s
+sys     0m0.202s
+
+
+sort2 uses: Merge sort
+
+How do you know?: Because it's the fastest
+
+reversed 50'000
+real    0m0.446s
+user    0m0.035s
+sys     0m0.182s
+
+sort3 uses: Selection sort
+
+How do you know?: Speed is between bubble sort and merge sort
+
+reversed 50'000
+real    0m3.147s
+user    0m2.697s
+sys     0m0.174s
+
+time ./sort2 reversed50000.txt
+
+time ./sort1 sorted50000.txt
+
+time ./sort2 sorted50000.txt
+
+time ./sort3 sorted50000.txt
